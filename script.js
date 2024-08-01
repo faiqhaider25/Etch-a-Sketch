@@ -1,3 +1,6 @@
+const message = `Default Mode: Colour Mode.
+Click anywhere on the grid to make it active and enjoy sketching.`;
+alert(message);
 const inputColor = document.querySelector('#inputColor');
 const gridSizeParagraph = document.querySelector('#gridSize');
 const gridStatus = document.querySelector('#gridStatus');
