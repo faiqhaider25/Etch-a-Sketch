@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-a-Sketch</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="header">
+        <p>Etch-a-Sketch</p>
+    </div>
+    <div class="main">
+        <div class="control">
+            <input type="color" id="inputColor" value="#000000">
+
+            <button class="button">Color Mode</button>
+            <button class="button">Rainbow Mode</button>
+            <button class="button">Eraser</button>
+            <button class="button">Toggle Grid</button>
+            <button class="button">Reset</button>
+
+            <p id="gridSize">2x2</p>
+            <p id="gridStatus">Inactive</p>
+            <input id="grid-Size-Selector" type="range" min="2" max="64" value="16">
+
+        </div>
+        <div class="grid">
+            <!-- JS to display grid box here -->
+        </div>
+    </div>
+    <div class="footer">
+        <p>
+            Copyright ©
+            <script>
+                document.write(new Date().getFullYear())
+            </script>
+            . faiqhaider25
+        </p>
+        <a href="https://github.com/faiqhaider25" target="_blank">
+            <img src="images/github.png" alt="img" style="margin-left: 5px;">
+        </a>
+    </div>
+</body>
+
+</html>

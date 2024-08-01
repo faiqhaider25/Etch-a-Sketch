@@ -1,0 +1,100 @@
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    padding: 0px;
+    color: white;
+    font-weight: bolder;
+    background: linear-gradient(45deg, #4c24bb, #5eb8b2);
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: white;
+    background: linear-gradient(45deg, #4c24bb, #5eb8b2);
+}
+
+.main {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background: linear-gradient(240deg, #683ddd, #89e0db);
+}
+
+.control {
+    display: flex;
+    width: 25vw;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+}
+
+.grid {
+    margin: 5px;
+    border: 5px solid black;
+    width: 600px;
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    padding: 1px;
+}
+
+.boxes {
+    box-sizing: border-box;
+    position: relative;
+    /* important */
+}
+
+#inputColor {
+    align-self: center;
+}
+
+#gridSize,
+#gridStatus {
+    align-self: center;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: bold;
+    margin: 4px 0px 0px 0px;
+
+}
+
+.button {
+    display: flex;
+    width: 50%;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(45deg, #6e45e2, #88d3ce);
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    /* Pointer cursor on hover */
+    transition: background 0.3s, transform 0.3s;
+    /* Smooth transition for hover effects */
+}
+
+.button:hover {
+    background: linear-gradient(45deg, #88d3ce, #6e45e2);
+    transform: scale(1.05);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.8);
+}
+
+/* Active effect for the button with the 'active' class */
+.button.active {
+    background: linear-gradient(45deg, #4b2c77, #6aab9b);
+    /* Darker gradient */
+    transform: scale(1);
+}
