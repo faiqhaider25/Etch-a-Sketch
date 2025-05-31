@@ -5,8 +5,8 @@
 - Activate the Etch-a-sketch.
 - Draw a simple shape.
 - Change the color.
-- Resizable Grid.
 - Rainbow mode.
+- Resizable grid.
 - Eraser mode.
 - Reset.
 

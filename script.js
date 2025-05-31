@@ -101,21 +101,3 @@ document.querySelectorAll('.button').forEach(button => {
         }
     });
 });
-
-const API_URL = "https://pbc5vzoite.execute-api.eu-north-1.amazonaws.com/prod/visitCount";
-
-async function fetchVisitCount() {
-    try {
-        const response = await fetch(API_URL);
-        const data = await response.json();
-        
-        alert(data.message); // Shows "Hello from the serverless function"
-        
-        document.getElementById("visitCount").innerText = "Visits: " + data.visitCount;
-    } catch (error) {
-        console.error("Error fetching visit count:", error);
-    }
-}
-
-fetchVisitCount(); // Call API on page load
-
